@@ -1,0 +1,36 @@
+{
+  "name": "mcp-context-inspector",
+  "version": "0.1.0",
+  "description": "Local CLI for inspecting MCP and agent trace context, token, and tool-call behavior.",
+  "type": "module",
+  "bin": {
+    "mcp-context-inspector": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run --passWithNoTests",
+    "test:watch": "vitest",
+    "check": "npm run build && npm test"
+  },
+  "keywords": [
+    "mcp",
+    "agent",
+    "cli",
+    "jsonl",
+    "trace",
+    "tokens"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  }
+}
